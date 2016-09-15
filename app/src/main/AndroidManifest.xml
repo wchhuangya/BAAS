@@ -18,6 +18,9 @@
         </activity>
 
         <activity android:name=".TestActivity" android:screenOrientation="portrait" />
+
+        <!-- Bmob 渠道 -->
+        <meta-data android:value="Main" android:name="BMOB_CHANNEL"/>
     </application>
 
     <!--允许联网 -->

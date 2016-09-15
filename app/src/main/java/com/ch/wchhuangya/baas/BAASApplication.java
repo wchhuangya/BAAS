@@ -17,6 +17,9 @@ public class BAASApplication extends Application {
         super.onCreate();
 
         Bmob.initialize(this, "1ec4aa2ceae3998de0982fe49ff6659e");
+
+        // 用于 AppVersion 表的初始化,只使用一次,使用多次会添加多条记录
+        //BmobUpdateAgent.initAppVersion(this);
     }
 
     @Override
