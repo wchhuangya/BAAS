@@ -3,6 +3,7 @@
           package="com.ch.wchhuangya.baas">
 
     <application
+        android:name=".BAASApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -15,6 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+
+        <activity android:name=".TestActivity" android:screenOrientation="portrait" />
     </application>
 
     <!--允许联网 -->
