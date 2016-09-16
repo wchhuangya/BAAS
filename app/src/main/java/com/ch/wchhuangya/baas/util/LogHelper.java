@@ -8,13 +8,20 @@ import android.util.Log;
  */
 public class LogHelper {
 
+    private LogHelper() {
+        throw new UnsupportedOperationException("该类不能被实例化!");
+    }
+
+    public static boolean LOG_SWITCH = true;
+    private static final String LOG_TAG = "BAAS";
+
     /**
      * 打印 DEBUG 级别日志
      * @param msg 日志信息
      */
     public static void d(String msg) {
-        if (Constants.LOG_SWITCH)
-            Log.d(Constants.LOG_TAG, msg);
+        if (LOG_SWITCH)
+            Log.d(LOG_TAG, msg);
     }
 
     /**
@@ -22,8 +29,8 @@ public class LogHelper {
      * @param msg 日志信息
      */
     public static void d(String msg, Throwable tr) {
-        if (Constants.LOG_SWITCH)
-            Log.d(Constants.LOG_TAG, msg, tr);
+        if (LOG_SWITCH)
+            Log.d(LOG_TAG, msg, tr);
     }
 
     /**
@@ -31,8 +38,8 @@ public class LogHelper {
      * @param msg 日志信息
      */
     public static void e(String msg) {
-        if (Constants.LOG_SWITCH)
-            Log.e(Constants.LOG_TAG, msg);
+        if (LOG_SWITCH)
+            Log.e(LOG_TAG, msg);
     }
 
     /**
@@ -40,8 +47,8 @@ public class LogHelper {
      * @param msg 日志信息
      */
     public static void e(String msg, Throwable tr) {
-        if (Constants.LOG_SWITCH)
-            Log.e(Constants.LOG_TAG, msg, tr);
+        if (LOG_SWITCH)
+            Log.e(LOG_TAG, msg, tr);
     }
 
     /**
@@ -49,8 +56,8 @@ public class LogHelper {
      * @param msg 日志信息
      */
     public static void i(String msg) {
-        if (Constants.LOG_SWITCH)
-            Log.i(Constants.LOG_TAG, msg);
+        if (LOG_SWITCH)
+            Log.i(LOG_TAG, msg);
     }
 
     /**
@@ -58,8 +65,8 @@ public class LogHelper {
      * @param msg 日志信息
      */
     public static void i(String msg, Throwable tr) {
-        if (Constants.LOG_SWITCH)
-            Log.i(Constants.LOG_TAG, msg, tr);
+        if (LOG_SWITCH)
+            Log.i(LOG_TAG, msg, tr);
     }
 
     /**
@@ -67,8 +74,8 @@ public class LogHelper {
      * @param msg 日志信息
      */
     public static void w(String msg) {
-        if (Constants.LOG_SWITCH)
-            Log.w(Constants.LOG_TAG, msg);
+        if (LOG_SWITCH)
+            Log.w(LOG_TAG, msg);
     }
 
     /**
@@ -76,8 +83,8 @@ public class LogHelper {
      * @param msg 日志信息
      */
     public static void w(String msg, Throwable tr) {
-        if (Constants.LOG_SWITCH)
-            Log.w(Constants.LOG_TAG, msg, tr);
+        if (LOG_SWITCH)
+            Log.w(LOG_TAG, msg, tr);
     }
 
     /**
@@ -85,8 +92,8 @@ public class LogHelper {
      * @param msg 日志信息
      */
     public static void v(String msg) {
-        if (Constants.LOG_SWITCH)
-            Log.v(Constants.LOG_TAG, msg);
+        if (LOG_SWITCH)
+            Log.v(LOG_TAG, msg);
     }
 
     /**
@@ -94,7 +101,7 @@ public class LogHelper {
      * @param msg 日志信息
      */
     public static void v(String msg, Throwable tr) {
-        if (Constants.LOG_SWITCH)
-            Log.v(Constants.LOG_TAG, msg, tr);
+        if (LOG_SWITCH)
+            Log.v(LOG_TAG, msg, tr);
     }
 }
