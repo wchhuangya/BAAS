@@ -19,6 +19,9 @@
 
         <activity android:name=".TestActivity" android:screenOrientation="portrait" />
 
+        <!-- Bmob 升级提示页面 -->
+        <activity android:name="cn.bmob.v3.update.UpdateDialogActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
         <!-- Bmob 渠道 -->
         <meta-data android:value="Main" android:name="BMOB_CHANNEL"/>
     </application>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SideSlip">
+        <attr name="rightMargin" format="reference|dimension" /><!-- 左边控件离屏幕右边的边距，类型：int，默认值为 50dp -->
+    </declare-styleable>
+</resources>
