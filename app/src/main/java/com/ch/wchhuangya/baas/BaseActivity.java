@@ -11,7 +11,7 @@ import android.support.v4.app.FragmentActivity;
 public class BaseActivity extends FragmentActivity {
 
     /** 公用的 Activity 变量 */
-    protected Activity mActivity;
+    protected Activity mActivity = this;
     /** 公用的 Intent 变量 */
     protected Intent mIntent;
 }

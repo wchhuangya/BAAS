@@ -4,7 +4,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.View;
 
-import com.ch.wchhuangya.baas.bean.Person;
+import com.ch.wchhuangya.baas.model.Person;
 import com.ch.wchhuangya.baas.util.LogHelper;
 
 import cn.bmob.v3.BmobQuery;

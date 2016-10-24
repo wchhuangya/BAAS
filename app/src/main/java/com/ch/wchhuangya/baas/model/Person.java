@@ -1,4 +1,4 @@
-package com.ch.wchhuangya.baas.bean;
+package com.ch.wchhuangya.baas.model;
 
 import cn.bmob.v3.BmobObject;
 

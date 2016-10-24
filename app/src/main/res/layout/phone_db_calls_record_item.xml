@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+                android:padding="10dp"
+    >
+
+    <TextView
+        android:id="@+id/calls_record_number_tv"
+        style="@style/ListView.title"/>
+    <TextView
+        android:id="@+id/calls_record_sync_tv"
+        style="@style/ListView.title"
+        android:layout_alignParentRight="true"/>
+    <TextView
+        android:id="@+id/calls_record_time_tv"
+        style="@style/ListView.title"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/calls_record_number_tv"/>
+    <TextView
+        android:id="@+id/calls_record_type_tv"
+        style="@style/ListView.title"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/calls_record_time_tv"/>
+
+</RelativeLayout>
